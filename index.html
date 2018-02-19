@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+  Results
+</title>
+<link rel="stylesheet" type="text/css" href="sheetstyle.css">
+<script src="jquery-3.3.1.min.js"></script>
+<script src="interactivity.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+  <div id="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="https://www.linkedin.com/in/matt-peng-791a47132/">LinkedIn</a>
+    <a href="https://www.facebook.com/matthew.peng.7">Facebook</a>
+    <a href="https://www.instagram.com/matt_peng99/">Instagram</a>
+    <a href="snapchat.html">Snapchat</a>
+  </div>
+
+
+
+
+
+
+  <video autoplay muted loop id="myVideo">
+    <source src="snow.MOV" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="content">
+    <h1>Welcome</h1>
+    <p>This is my personal website where I document my journey growing up in the Midwest.  (Specifically in the corn state!)</p>
+    <p>Feel free to follow my social medias listed above. The video in the background occurred during a snowstorm
+      in my neighborhood Date: Feb. 17, 2018</p>
+    <button id="myBtn" onclick="window.location.href='new.html'">Enter</button>
+</div>
+  </div>
+
+<br></br>
+
+
+
+  <script>
+  var video = document.getElementById("myVideo");
+  var btn = document.getElementById("myBtn");
+
+  function myFunction() {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+    } else {
+      video.pause();
+      btn.innerHTML = "Play";
+    }
+  }
+  </script>
+
+
+          <script>
+          window.onscroll = function() {myFunction()};
+
+          var navbar = document.getElementById("navbar");
+          var sticky = navbar.offsetTop;
+
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+          </script>
+</body>
+
+
+</html>
