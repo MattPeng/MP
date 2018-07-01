@@ -1,2 +1,2 @@
 # MPJourney.github.io 
-This is my portfolio website. Thank you for visiting!
+This is the src for my portfolio website. Thank you for visiting!
